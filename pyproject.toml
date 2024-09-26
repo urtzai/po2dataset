@@ -7,7 +7,7 @@ authors = [
 description = "Python tool to extract sentences from po files and create language datasets for NLP machine learning"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["egg", "bacon", "sausage", "tomatoes", "Lobster Thermidor"]
+keywords = ["po", "dataset", "NLP", "argostranslate", "libretranslate", "language", "translation"]
 classifiers = [
   # How mature is this project? Common values are
   #   3 - Alpha
@@ -24,15 +24,14 @@ classifiers = [
 
   # Specify the Python versions you support here.
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.6",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
 ]
 
 [project.urls]
-Homepage = "https://example.com"
-Documentation = "https://readthedocs.org"
-Repository = "https://github.com/me/spam.git"
-"Bug Tracker" = "https://github.com/me/spam/issues"
-Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+Homepage = "https://github.com/urtzai/po2dataset"
+Documentation = "https://github.com/urtzai/po2dataset/blob/main/README.md"
+Repository = "https://github.com/urtzai/po2dataset"
+"Bug Tracker" = "https://github.com/urtzai/po2dataset/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
