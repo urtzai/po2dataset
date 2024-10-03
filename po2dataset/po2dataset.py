@@ -26,7 +26,7 @@ def create_dataset(path, output):
 
     f_source = open("{}/source".format(output), "w")
     f_target = open("{}/target".format(output), "w")
-    for i, entry in enumerate(pofile, 1):
+    for i, entry in enumerate(pofile.translated_entries(), 1):
         print(entry.msgid, file=f_source)
         print(entry.msgstr, file=f_target)
 
