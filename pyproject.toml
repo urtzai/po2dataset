@@ -1,6 +1,6 @@
 [project]
 name = "po2dataset"
-version = "0.1.0"
+version = "0.1.0-beta"
 authors = [
   {name = "Urtzi Odriozola", email = "urtzi.odriozola@gmail.com"},
 ]
