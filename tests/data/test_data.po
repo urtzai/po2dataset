@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: po2dataset (test)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-07 21:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Hellow World!"
+msgstr "Kaixo Mundua!"
+
+msgid "This is a test po file"
+msgstr "Hau testerako po fitxategia da"

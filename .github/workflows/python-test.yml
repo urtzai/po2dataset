@@ -1,0 +1,42 @@
+name: Unit tests
+on:
+  push:
+    branches: ['main']
+    tags-ignore: ['**']
+
+jobs:
+  test:
+    name: test with ${{ matrix.env }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        env:
+          - '3.13'
+          - '3.12'
+          - '3.11'
+          - '3.10'
+          - '3.9'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          cache-dependency-glob: 'pyproject.toml'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install tox
+        run: uv tool install --python-preference only-managed --python 3.13 tox --with tox-uv --with tox-gh
+      - name: Install Python
+        if: matrix.env != '3.13'
+        run: uv python install --python-preference only-managed ${{ matrix.env }}
+      - name: Setup test suite
+        run: tox run -vv --notest --skip-missing-interpreters false
+        env:
+          TOX_GH_MAJOR_MINOR: ${{ matrix.env }}
+      - name: Run test suite
+        run: tox run --skip-pkg-install
+        env:
+          TOX_GH_MAJOR_MINOR: ${{ matrix.env }}
