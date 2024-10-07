@@ -4,7 +4,7 @@
 [![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/po2dataset.svg)](https://pypi.python.org/pypi/po2dataset/)
 [![check](https://github.com/urtzai/po2dataset/actions/workflows/python-test.yml/badge.svg)](https://github.com/urtzai/po2dataset/actions/workflows/python-test.yml)
 
-** po2dataset ** is a python tool to extract sentences from po files and create language datasets for NLP machine learning and neural machine translation.
+**po2dataset** is a python tool to extract sentences from po files and create language datasets for NLP machine learning and neural machine translation.
 
 This command line tool is intended to create dataset packages suitable for [Argos Train](https://github.com/argosopentech/argos-train).
 
