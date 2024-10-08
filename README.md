@@ -10,6 +10,12 @@ This command line tool is intended to create dataset packages suitable for [Argo
 
 ## How to install
 
+### From pip
+
+```bash
+pip install po2dataset
+```
+
 ### Manual installation
 
 Create a virtual environment using [virtualenv](https://virtualenv.pypa.io/en/latest/index.html)
@@ -25,8 +31,8 @@ source ./bin/activate
 
 ### Create Argos Train suitable dataset
 
-```python
-python po2dataset/po2dataset.py <path_to_po_file> --name <project_name> --source_code <source_lang_code> --target_code <target_lang_code> --ref "Some reference information of the project"
+```bash
+po2dataset <path_to_po_file> --name <project_name> --source_code <source_lang_code> --target_code <target_lang_code> --ref "Some reference information of the project"
 ```
 
 Where:
@@ -35,6 +41,11 @@ Where:
 - `source_code`: Source language code ([ISO 639](https://en.wikipedia.org/wiki/ISO_639))
 - `target_code`: Target language code ([ISO 639](https://en.wikipedia.org/wiki/ISO_639))
 - `ref`: Some reference information of the project
+
+Optional arguments:
+
+- `format`: Extension name of the zip file (default **argosdata**)
+- `license`: License to add into the package (default [**CC0**](https://creativecommons.org/publicdomain/zero/1.0/))
 
 ## Support
 
