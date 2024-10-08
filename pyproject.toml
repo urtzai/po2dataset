@@ -35,6 +35,9 @@ dynamic = ["dependencies"]
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
+[project.scripts]
+po2dataset = "po2dataset.po2dataset:main"
+
 [project.urls]
 Homepage = "https://github.com/urtzai/po2dataset"
 Documentation = "https://github.com/urtzai/po2dataset/blob/main/README.md"

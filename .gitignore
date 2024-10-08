@@ -6,6 +6,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# VSCode config
+.vscode
+
 # C extensions
 *.so
 
