@@ -1,3 +1,4 @@
 polib == 1.2.0
 argparse == 1.4.0
 tox == 4.21.2
+requests == 2.32.3
