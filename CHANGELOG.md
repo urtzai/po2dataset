@@ -13,6 +13,18 @@
 
 ### Unknown
 
+* Merge pull request #15 from urtzai/dev
+
+Release test ([`a27158f`](https://github.com/urtzai/po2dataset/commit/a27158f61ab078dc582d7514883dde8920d52da9))
+
+* Merge branch 'main' of github.com:urtzai/po2dataset into dev ([`a1d84c2`](https://github.com/urtzai/po2dataset/commit/a1d84c2a4820cdba3e6386d7cb633c1a7d39e419))
+
+* Merge pull request #14 from urtzai/dev
+
+fix: Semantic release workflow ([`8ed9d24`](https://github.com/urtzai/po2dataset/commit/8ed9d24b23df9651d1b16bc72ee6c3c02f6d20ad))
+
+* remove releaser ([`8891f66`](https://github.com/urtzai/po2dataset/commit/8891f66027e25e6f522d668c3b941980246210ac))
+
 * Workflow changes ([`6816e93`](https://github.com/urtzai/po2dataset/commit/6816e932790c927e36f72643414c1a1d3aaf3d63))
 
 * Merge pull request #13 from urtzai/dev
