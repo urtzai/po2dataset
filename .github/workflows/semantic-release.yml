@@ -34,8 +34,12 @@ jobs:
         uses: python-semantic-release/python-semantic-release@v9.10.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          git_committer_name: "github-actions"
-          git_committer_email: "actions@users.noreply.github.com"
+          git_committer_name: 'github-actions'
+          git_committer_email: 'actions@users.noreply.github.com'
+
+      - name: Build Source and Wheel Distributions
+        run: |
+          python setup.py sdist bdist_wheel
 
       - name: Publish | Upload package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
