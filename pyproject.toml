@@ -1,6 +1,6 @@
 [project]
 name = "po2dataset"
-version = "0.1.1"
+version = "0.1.0"
 authors = [
   {name = "Urtzi Odriozola", email = "urtzi.odriozola@gmail.com"},
 ]
@@ -93,9 +93,10 @@ env = "GIT_COMMIT_AUTHOR"
 default = "semantic-release <semantic-release>"
 
 [tool.semantic_release.commit_parser_options]
-allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
-minor_tags = ["feat"]
-patch_tags = ["fix", "perf"]
+allowed_tags = ["breaking","build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
+minor_tags = ["fix", "style", "test", "docs","ci","build,"chore"]
+patch_tags = ["feat", "perf"]
+major_tags = ["breaking"]
 default_bump_level = 0
 
 [tool.semantic_release.remote]
