@@ -28,12 +28,6 @@ jobs:
         run: |
           git checkout -B ${{ github.ref_name }} ${{ github.sha }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: python3 -m pip install build
-
       - name: Action | Semantic Version Release
         id: release
         # Adjust tag with desired version if applicable.
