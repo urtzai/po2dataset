@@ -94,7 +94,7 @@ default = "semantic-release <semantic-release>"
 
 [tool.semantic_release.commit_parser_options]
 allowed_tags = ["breaking","build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
-minor_tags = ["fix", "style", "test", "docs","ci","build,"chore"]
+minor_tags = ["fix", "style", "test", "docs","ci","build", "chore"]
 patch_tags = ["feat", "perf"]
 major_tags = ["breaking"]
 default_bump_level = 0
